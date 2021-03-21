@@ -1,0 +1,19 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 30000,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "videosFolder": "cypress/videos/testExecutionVideos",
+  
+  "env": {
+    "webdriveruni_homepage": "http://www.webdriveruniversity.com",
+    "first_name":"Yusuf"
+  },
+  "projectId": "n1m4fs",
+  "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
+}
+
