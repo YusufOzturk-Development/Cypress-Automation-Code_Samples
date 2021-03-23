@@ -8,24 +8,24 @@ pipeline {
             parallel {
                 stage('Slave Node1') {
                     agent {
-                        label "remote_node_1"
+                        label "remote_node1"
                     }
                     steps {
-                        git url: 'https://github.com/YusufOzturk-Development/Cypress-Automation-Code_Samples.git'
+                        git url: 'https://github.com/qauni/cypress-automation-framework.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run triggerAllTests-autostore-dashboard'
+                        bat 'npm run %Script%'
                     }
                 }
-                     stage('Slave Node2') {
+                stage('Slave Node2') {
                     agent {
-                        label "remote_node_2"
+                        label "remote_node2"
                     }
                     steps {
-                        git url: 'https://github.com/YusufOzturk-Development/Cypress-Automation-Code_Samples.git'
+                        git url: 'https://github.com/qauni/cypress-automation-framework.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run triggerAllTests-autostore-dashboard'
+                        bat 'npm run %Script%'
                     }
                 }
             }
