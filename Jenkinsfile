@@ -14,7 +14,7 @@ pipeline {
                         git url: 'https://github.com/YusufOzturk-Development/Cypress-Automation-Code_Samples.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run triggerAllTests-chrome'
+                        bat 'npm run triggerAllTests-autostore-dashboard'
                     }
                 }
                      stage('Slave Node2') {
@@ -25,7 +25,7 @@ pipeline {
                         git url: 'https://github.com/YusufOzturk-Development/Cypress-Automation-Code_Samples.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run triggerAllTests-headless'
+                        bat 'npm run triggerAllTests-autostore-dashboard'
                     }
                 }
             }
